@@ -1,0 +1,108 @@
+.section-Circle {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+.circleContainer {
+  position: relative;
+  list-style: none;
+  width: 100%;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 100%;
+  transform: none;
+  overflow: hidden;
+}
+
+.textNum {
+  cursor: pointer;
+}
+
+.selected .number {
+  background-image: url("https://numerologist.com/wp-content/uploads/2020/11/002.png") !important;
+}
+
+.selected22 {
+  background-image: url("https://numerologist.com/wp-content/uploads/2020/11/reading-img-22.jpg");
+}
+
+.text0,
+.text1,
+.text2,
+.text3,
+.text4,
+.text5,
+.text6,
+.text7,
+.text8,
+.text9 {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 50%;
+  transform-origin: 100% 100%;
+  cursor: pointer;
+}
+.text0 .number,
+.text1 .number,
+.text2 .number,
+.text3 .number,
+.text4 .number,
+.text5 .number,
+.text6 .number,
+.text7 .number,
+.text8 .number,
+.text9 .number {
+  display: block;
+  width: 200%;
+  height: 200%;
+  transform: skew(-56deg) rotate(-73deg);
+  text-align: center;
+  background-image: url(https://numerologist.com/wp-content/uploads/2020/11/001.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  color: #507ca5;
+  font-size: 30px;
+  line-height: 120px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+.text0 .number:hover,
+.text1 .number:hover,
+.text2 .number:hover,
+.text3 .number:hover,
+.text4 .number:hover,
+.text5 .number:hover,
+.text6 .number:hover,
+.text7 .number:hover,
+.text8 .number:hover,
+.text9 .number:hover {
+  background-image: url("https://numerologist.com/wp-content/uploads/2020/11/002.png");
+}
+
+.text10 {
+  background-color: rgb(8, 31, 53);
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  border-radius: 990px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #507ca5;
+}
+.text10:hover {
+  background-image: url("https://numerologist.com/wp-content/uploads/2020/11/reading-img-22.jpg");
+}
+.text10 .number {
+  font-size: 32px;
+}/*# sourceMappingURL=circle.css.map */

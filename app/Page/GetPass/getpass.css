@@ -1,0 +1,133 @@
+.containerGetPass {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(https://numology.com/img/bggg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.bg-GP {
+  background-image: url("../../../Assets/Images/bg-magic.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 332px;
+  height: 463px;
+  margin: 20px;
+  border: 3px solid #af3589;
+  border-radius: 5px;
+  position: relative;
+}
+.button {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+.text-GP {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 100px;
+  font-family: Bodoni_font;
+  color: #E852CB;
+  text-shadow: 0 0 60px #D35BBC;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #FFA9EE;
+}
+
+.getPassChildContent {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.getPassChildContent h4 {
+  color: red;
+}
+
+.animationButton {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animationButton>button {
+  width: 100%;
+  min-height: 50px;
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  background: #af3589;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 12px 12px 24px rgba(137, 57, 161, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+}
+
+.animationButton>button:hover,
+.animationButton>button:focus {
+  color: white;
+  transform: translateY(-6px);
+}
+
+.animationButton>button:hover:before,
+.animationButton>button:focus:before {
+  opacity: 1;
+}
+
+.animationButton>button:after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid #af3589;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.animationButton>button:hover:after,
+.animationButton>button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+.form-container {
+  bottom: 5px;
+}
+
+/*# sourceMappingURL=getpass.css.map */

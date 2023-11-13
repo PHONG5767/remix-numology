@@ -1,0 +1,19 @@
+.logo {
+    height: 50px;
+}
+
+.custom-navbar-collapse {
+    position: relative !important;
+    max-height: 300px !important;
+    overflow-y: auto !important;
+    transition: max-height 0.3s ease;
+}
+
+@media (max-width: 1090px) {
+    .scroll-mobile-menu {
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        background-color: white;
+    }
+}

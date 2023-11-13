@@ -1,0 +1,39 @@
+.btn {
+    padding: 13px 65px 13px 65px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn:hover {
+    transition: all 0.3s ease-out;
+    color: white;
+}
+.primary {
+    background-color: #af3589;
+    color: white;
+}
+.primary:hover {
+    background-color: #212544;
+}
+.secondary {
+    background-color: #212544;
+    color: white;
+}
+.secondary:hover {
+    background-color: #af3589;
+}
+.large {
+    width: 100%;
+}
+@media (max-width: 500px) {
+    .btn {
+        padding: 18px 30px 18px 30px;
+   }
+}

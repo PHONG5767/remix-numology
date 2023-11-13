@@ -1,0 +1,100 @@
+.bgRouteContainer {
+    position: relative;
+    background-image: url('https://numology.com/img/bgnum-sub.png');
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    overflow: hidden;
+
+    &:before {
+        content: '';
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        background-image: url('https://numology.com/img/cicle-homepage.webp');
+        width: 60vh;
+        height: 60vh;
+        background-size: contain;
+        animation: 20s linear infinite rotating;
+    }
+    @keyframes rotating {
+        0% {
+            transform:translate(-50%, -50%) rotate(0);
+        }
+        100% {
+            transform:translate(-50%, -50%) rotate(-360deg);
+        }
+    }
+}
+
+.numMain {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 120px;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177, 0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
+}
+
+.nameAndBirthday{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate( -50%);
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+     p{
+        font-size: 30px;
+     }
+}
+.button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.randomContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.ranChild{
+    position: relative;
+    opacity: 0.5;
+    transition: all 10s ease-in-out;
+    display: inline-block;
+    visibility: inherit;
+}
+@media (max-width: 500px) {
+    .button {
+        bottom: 5px;
+    }
+    .numMain {
+        font-size: 100px;
+    }
+    .bgRouteContainer:before{
+        width: 450px;
+        height: 450px;
+        
+    }
+    .nameAndBirthday{
+        width: 100%;
+        p{
+            font-size: 20px;
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+        }
+    }
+}

@@ -1,0 +1,320 @@
+.col6 {
+    grid-area: 1 / 6 / span 3 / span 1;
+    font-size: 35px;
+
+}
+
+
+.boxChild {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+    min-width: 70px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+}
+
+.col7 {
+    grid-area: 1 / 7 / span 3 / span 1;
+    font-size: 80px;
+    color: black;
+}
+
+.col3 {
+    min-width: 100px;
+}
+
+.grid-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 5px;
+    background: linear-gradient(336deg, rgba(81, 81, 81, 0.05) 0%, rgba(81, 81, 81, 0.05) 50%, rgba(80, 80, 80, 0.05) 50%, rgba(80, 80, 80, 0.05) 100%), linear-gradient(359deg, rgba(25, 25, 25, 0.05) 0%, rgba(25, 25, 25, 0.05) 50%, rgba(25, 25, 25, 0.05) 50%, rgba(25, 25, 25, 0.05) 100%), linear-gradient(96deg, rgba(150, 150, 150, 0.05) 0%, rgba(150, 150, 150, 0.05) 50%, rgba(57, 57, 57, 0.05) 50%, rgba(57, 57, 57, 0.05) 100%), linear-gradient(257deg, rgba(68, 68, 68, 0.05) 0%, rgba(68, 68, 68, 0.05) 50%, rgba(48, 48, 48, 0.05) 50%, rgba(48, 48, 48, 0.05) 100%), linear-gradient(286deg, rgba(237, 237, 237, 0.05) 0%, rgba(237, 237, 237, 0.05) 50%, rgba(192, 192, 192, 0.05) 50%, rgba(192, 192, 192, 0.05) 100%), linear-gradient(54deg, rgba(92, 92, 92, 0.05) 0%, rgba(92, 92, 92, 0.05) 50%, rgba(212, 212, 212, 0.05) 50%, rgba(212, 212, 212, 0.05) 100%), linear-gradient(354deg, rgba(122, 122, 122, 0.05) 0%, rgba(122, 122, 122, 0.05) 50%, rgba(215, 215, 215, 0.05) 50%, rgba(215, 215, 215, 0.05) 100%), radial-gradient(circle at center center, rgb(201, 42, 226), rgb(42, 22, 204));
+    padding: 50px;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.grid-container:before {
+    position: absolute;
+    content: '';
+    width: 98%;
+    height: 98%;
+    top: 50%;
+    left: 50%;
+    border: rgb(255, 255, 255) 5px solid;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+
+}
+
+.iconbg {
+    color: rgb(255, 255, 255);
+}
+
+.bg-container-grid {
+    height: 80vh;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nameDemo {
+    color: white;
+    font-size: 30px;
+}
+
+
+.bgFixed {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('https://numology.com/img/bggg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.containerContentDemoRp {
+    background-color: #d3c2cd;
+    padding: 20px 20px 20px 20px;
+    margin-top: 60px;
+    border-radius: 5px 5px 5px 5px;
+    border: 3px solid white;
+    border-top:  10px solid #af3589;
+    box-sizing: border-box;
+    position: relative; 
+    z-index: 10;
+}
+
+h3 {
+    color: #af3589;
+    margin-top: 0px !important;
+}
+
+.containerRoute {
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.containerRoute:before {
+    background-image: url('https://numology.com/img/mandala-lines-8.webp');
+    background-size: contain;
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    animation: spin-transformed 25s linear infinite;
+    opacity: 0.5;
+}
+
+.containerRoute:after {
+    background-image: url('https://numology.com/img/mandala-shape-8.webp');
+    background-size: contain;
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    animation: spin-transformed 50s linear infinite;
+    opacity: 0.5;
+}
+
+.border__bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    background-image: url('https://numology.com/img/borderimg.png');
+    background-size: contain;
+    transform: translate(-50%, -50%);
+}
+
+.border__bg:after {
+    background-image: url('https://numology.com/img/mandala-bg.webp');
+    background-size: contain;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+}
+
+.backgroungCanvas {
+    background-image: url('https://numology.com/img/sign-mandala-bg.png');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    background-size: contain;
+    transform: translate(-50%, -50%);
+    animation: rotating 50s linear infinite;
+    transform-origin: center center;
+}
+
+.hidecontainerContentDemoRp .hideDemo {
+    display: none;
+}
+
+.containerContentDemoRp:before{
+    content:"";
+    text-align: center;
+    background-image: url("../../../Assets/Images/bg_title_detail.png");
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    width: 50%;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(-50%,0);
+    background-position: bottom;
+    z-index: 1;
+}
+
+.numMain {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    font-weight: bold;
+    animation: opacity 5s linear 1;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+
+}
+
+.PeriodNumberRpNum {
+    font-size: 70px;
+    font-weight: 900;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+@keyframes rotating {
+    0% {
+        transform: translate(-50%, -50%) rotate(0);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+@keyframes spin-transformed {
+    0% {
+        -webkit-transform: translate(-50%, -50%) rotateY(180deg) rotateX(180deg);
+        -ms-transform: translate(-50%, -50%) rotateY(180deg) rotateX(180deg);
+        transform: translate(-50%, -50%) rotateY(180deg) rotateX(180deg);
+    }
+
+    50% {
+        -webkit-transform: translate(-50%, -50%) rotateY(0deg) rotateX(0deg);
+        -ms-transform: translate(-50%, -50%) rotateY(0deg) rotateX(0deg);
+        transform: translate(-50%, -50%) rotateY(0deg) rotateX(0deg);
+    }
+
+    100% {
+        -webkit-transform: translate(-50%, -50%) rotateY(-180deg) rotateX(-180deg);
+        -ms-transform: translate(-50%, -50%) rotateY(-180deg) rotateX(-180deg);
+        transform: translate(-50%, -50%) rotateY(-180deg) rotateX(-180deg);
+    }
+}
+
+
+@media (max-width: 500px) {
+    .boxChild {
+        min-width: auto;
+        font-size: 12px;
+    }
+
+    .containerRoute {
+        width: 340px;
+        height: 340px;
+    }
+
+    .containerRoute:before {
+        width: 310px;
+        height: 310px;
+    }
+    .PeriodNumberRpNum {
+        font-size: 40px;
+    }
+
+    .containerRoute:after {
+        width: 310px;
+        height: 310px;
+    }
+
+    .border__bg {
+        width: 320px;
+        height: 320px;
+    }
+
+    .border__bg:after {
+        width: 320px;
+        height: 320px;
+    }
+
+    .backgroungCanvas {
+        width: 320px;
+        height: 320px;
+    }
+
+    .numMain {
+        font-size: 100px;
+    }
+
+    .nameDemo {
+        color: white;
+        font-size: 25px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .boxChild {
+        min-width: auto;
+        font-size: 25px;
+
+    }
+
+    .col3 {
+        min-width: auto;
+    }
+
+    .grid-container {
+        width: 100%;
+        grid-gap: 1px;
+        padding: 10px;
+
+    }
+
+    .col7 {
+        font-size: 35px !important;
+    }
+
+    .col6 {
+        font-size: 25px !important;
+    }
+}
