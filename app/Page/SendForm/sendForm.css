@@ -75,7 +75,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: url('https://numology.com/img/bggg.png');
+    background-image: url('../../../public/img/bggg.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
@@ -88,7 +88,6 @@
     margin-top: 60px;
     border-radius: 5px 5px 5px 5px;
     border: 3px solid white;
-    border-top:  10px solid #af3589;
     box-sizing: border-box;
     position: relative; 
     z-index: 10;
@@ -106,7 +105,7 @@ h3 {
 }
 
 .containerRoute:before {
-    background-image: url('https://numology.com/img/mandala-lines-8.webp');
+    background-image: url('../../../public/img/mandala-lines-8.webp');
     background-size: contain;
     position: absolute;
     width: 380px;
@@ -120,7 +119,7 @@ h3 {
 }
 
 .containerRoute:after {
-    background-image: url('https://numology.com/img/mandala-shape-8.webp');
+    background-image: url('../../../public/img/mandala-shape-8.webp');
     background-size: contain;
     position: absolute;
     width: 380px;
@@ -139,13 +138,13 @@ h3 {
     left: 50%;
     width: 400px;
     height: 400px;
-    background-image: url('https://numology.com/img/borderimg.png');
+    background-image: url('../../../public/img/borderimg.png');
     background-size: contain;
     transform: translate(-50%, -50%);
 }
 
 .border__bg:after {
-    background-image: url('https://numology.com/img/mandala-bg.webp');
+    background-image: url('../../../public/img/mandala-bg.webp');
     background-size: contain;
     position: absolute;
     width: 400px;
@@ -157,7 +156,7 @@ h3 {
 }
 
 .backgroungCanvas {
-    background-image: url('https://numology.com/img/sign-mandala-bg.png');
+    background-image: url('../../../public/img/sign-mandala-bg.png');
     position: absolute;
     top: 50%;
     left: 50%;
@@ -172,7 +171,7 @@ h3 {
 .hidecontainerContentDemoRp .hideDemo {
     display: none;
 }
-
+/* 
 .containerContentDemoRp:before{
     content:"";
     text-align: center;
@@ -187,7 +186,7 @@ h3 {
     transform: translate(-50%,0);
     background-position: bottom;
     z-index: 1;
-}
+} */
 
 .numMain {
     position: absolute;

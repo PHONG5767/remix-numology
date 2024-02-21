@@ -3,6 +3,7 @@ import styles from "./route.module.css"
 import NumerologyData from "../../../Components/Calculate/CalculateNumber";
 import FullName from "../../../Components/Calculate/CalculateChar";
 import RandomChar from "./RandomChar";
+import PrimaryButton from "~/Components/Button";
 import "bootstrap/dist/css/bootstrap.css";
 
 

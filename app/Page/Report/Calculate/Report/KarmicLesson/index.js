@@ -16,7 +16,7 @@ const KarmicLessonRp = () => {
   };
   const showNameimgs = characterArray.map((showNameimg) => {
     return (
-      <img src={`https://numology.com/img/${showNameimg}${1}.png`} alt="" />
+      <img src={`img/${showNameimg}${1}.png`} alt="" />
     );
   });
   const contentKarmicLessonMap = KarmicLessonNumbers().map(

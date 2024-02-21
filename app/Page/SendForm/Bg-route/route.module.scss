@@ -1,6 +1,6 @@
 .bgRouteContainer {
     position: relative;
-    background-image: url('https://numology.com/img/bgnum-sub.png');
+    background-image: url('../../../public/img/bgnum-sub.png');
     min-height: 100vh;
     width: 100%;
     background-size: cover;
@@ -15,7 +15,7 @@
         transform: translate(-50%, -50%);
         top: 50%;
         left: 50%;
-        background-image: url('https://numology.com/img/cicle-homepage.webp');
+        background-image: url('../../../public/img/cicle-homepage.webp');
         width: 60vh;
         height: 60vh;
         background-size: contain;

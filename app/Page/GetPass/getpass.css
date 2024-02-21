@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-image: url(https://numology.com/img/bggg.png);
+  background-image: url('../../../public/img/bggg.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100vh;
@@ -10,7 +10,7 @@
 }
 
 .bg-GP {
-  background-image: url("../../../Assets/Images/bg-magic.png");
+  background-image: url("../../../public/img/bg-magic.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

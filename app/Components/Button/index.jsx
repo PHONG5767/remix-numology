@@ -1,7 +1,7 @@
 import styles from './Button.module.css'
 
 import classNames from "classnames";
-import { Link } from "react-router-dom";
+import { Link } from "@remix-run/react";
 
 function PrimaryButton({ to, href, onClick, children, secondary, large, primary,...passProp }) {
   const classButton = classNames({

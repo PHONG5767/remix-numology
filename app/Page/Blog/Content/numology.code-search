@@ -1,0 +1,200 @@
+# Query: numology
+# Flags: RegExp
+# ContextLines: 1
+
+51 results - 23 files
+
+app\Components\Content\Report\DemoContent\index.jsx:
+  49          <p>Để tìm Số Định Mệnh của bạn, hãy tham khảo bảng sau:</p>
+  50:         <img src="https://vi.numology.com/img/word-chart.png" alt="" />
+  51      </div>,
+
+app\Components\Layout\Default\Footer\index.js:
+  11            <div className="col-sm-12 col-md-4 col-lg-4">
+  12:             <img className="w-50" src="https://vi.numology.com/img/logo4.png" alt="" />
+  13              <blockquote className="text-white">
+
+  31              <li>Hotline: 1900.2157</li>
+  32:             <li>Email: contact@numology.com</li>
+  33              </div>
+
+app\Components\Layout\Default\Header\index.js:
+  17          <img
+  18:           src="https://vi.numology.com/img/logo4.png"
+  19            alt=""
+
+app\Page\About\index.js:
+   6        <p>
+   7:         Chào mừng bạn đến với trang "Về chúng tôi" của Numology.com! Chúng tôi là một đội ngũ đam mê về thần số học và xây dựng nền tảng này để cung cấp cho mọi người những kiến thức và thông tin thú vị về lĩnh vực này.
+   8        </p>
+
+  15        <p>
+  16:         Nếu bạn có bất kỳ câu hỏi, ý kiến đóng góp hoặc đề xuất nào, vui lòng liên hệ với chúng tôi qua địa chỉ email: info@numology.com. Chúng tôi rất hân hạnh được nghe từ bạn và xây dựng cùng nhau một cộng đồng thần số học sôi động và chia sẻ.
+  17        </p>
+
+app\Page\Blog\Content\index.jsx:
+  14  const img = {
+  15:     num1:'https://vi.numology.com/img/Life-path-1.png',
+  16:     num2:'https://vi.numology.com/img/Life-path-2.png',
+  17:     num3:'https://vi.numology.com/img/Life-path-3.png',
+  18:     num4:'https://vi.numology.com/img/Life-path-4.png',
+  19:     num5:'https://vi.numology.com/img/Life-path-5.png',
+  20:     num6:'https://vi.numology.com/img/Life-path-6.png',
+  21:     num7:'https://vi.numology.com/img/Life-path-7.png',
+  22:     num8:'https://vi.numology.com/img/Life-path-8.png',
+  23:     num9:'https://vi.numology.com/img/Life-path-9.png',
+  24:     num11:'https://vi.numology.com/img/Life-path-11.png',
+  25:     num22:'https://vi.numology.com/img/Life-path-22.png',
+  26  }
+
+app\Page\GetPass\getpass.css:
+  4    flex-direction: column;
+  5:   background-image: url(https://vi.numology.com/img/bggg.png);
+  6    background-repeat: no-repeat;
+
+app\Page\GetPass\getpass.scss:
+  4    flex-direction: column;
+  5:   background-image: url(https://vi.numology.com/img/bggg.png);
+  6    background-repeat: no-repeat;
+
+app\Page\Home\homepage.css:
+   1  .banner{
+   2:     background-image: url('https://vi.numology.com/img/home_bg_1.webp');
+   3      background-size: cover;
+
+  43    .banner1-2{
+  44:     background-image: url('https://vi.numology.com/img/bag_img_1.webp');
+  45      box-shadow: 0 0 36px #af3589;
+
+app\Page\Home\Banner\index.jsx:
+  29                                  <p className="reset-p">
+  30:                                     Người Tin Tưởng Numology Trong 4 Năm Qua <br />
+  31                                      Và Với Hơn 5 Ngàn Lượt Truy Cứu Hàng Ngày
+
+  33                              </div>
+  34:                             {/* <h3 className="text-center">HIỆN TẠI WEBSITE VI.NUMOLOGY.COM ĐANG TIẾN HÀNH BẢO TRÌ</h3>
+  35                              <p className="text-danger text-center">Khách hàng đã thanh toán trong ngày 25/10/2023 vui lòng liên hệ Zalo: 0342.394.855 để được hỗ trợ</p> */}
+
+  38                      {/* <div className="banner1-2 justify-content-center d-flex">
+  39:                         <h2 className="text-black">Chào Mừng Bạn Đến Với Hành Trình Khám Phá Bản Thân <br /> Tại Numology.com</h2>
+  40                          <p className="text-black">Numerology là một phương pháp tâm linh dựa trên việc phân tích và hiểu các số liên quan đến cuộc sống của bạn, bao gồm ngày sinh, tên và các yếu tố khác. Các số này được coi là có ảnh hưởng đến tính cách, sự kiện và cơ hội trong cuộc sống của bạn. <br /> <br />
+
+app\Page\Home\FAQs\index.jsx:
+  7                  <h3 className='text-center'>Ứng Dụng Thần Số Học</h3>
+  8:                 <p className='text-center text-danger'>Với hơn 1200 phép tính toán phức tạp Vi.Numology.com cung cấp cho bạn báo cáo chi tiết và toàn diện nhất về cuộc đời
+  9                  </p>
+
+app\Page\Home\Form\form.css:
+  16  .form{
+  17:     background-image: url('https://vi.numology.com/img/bag_img_4.webp');
+  18      background-size: cover;
+
+  32  .containerForm{
+  33:     /* background-image: url('https://vi.numology.com/img/home_bg_4.webp');
+  34      padding-bottom: 300px; */
+
+  39  .containerWelcom {
+  40:     background-image: url('https://vi.numology.com/img/home_bg_4.webp');
+  41      padding-bottom: 300px;
+
+app\Page\Home\Welcom\index.jsx:
+  5              <div className="banner1-2 justify-content-center d-flex">
+  6:                 <h2 className="text-black">Chào Mừng Bạn Đến Với Hành Trình Khám Phá Bản Thân <br /> Tại Numology.com</h2>
+  7                  <p className="text-black">Numerology là một phương pháp tâm linh dựa trên việc phân tích và hiểu các số liên quan đến cuộc sống của bạn, bao gồm ngày sinh, tên và các yếu tố khác. Các số này được coi là có ảnh hưởng đến tính cách, sự kiện và cơ hội trong cuộc sống của bạn. <br /> <br />
+
+app\Page\Policy\index.js:
+   3        <div>
+   4:         <h3>Chính sách Bảo mật của Numology.com</h3>
+   5          <p>
+   6:           Chào mừng bạn đến với trang web Numology.com! Chúng tôi hoan nghênh sự quan tâm và tin tưởng của bạn đối với dịch vụ của chúng tôi. Chính sách bảo mật này sẽ giải thích cách chúng tôi thu thập, sử dụng và bảo vệ thông tin cá nhân của bạn. Vui lòng đọc kỹ chính sách này để hiểu rõ hơn về cách chúng tôi hoạt động trong việc bảo vệ dữ liệu của bạn.
+   7          </p>
+
+  33          <p>
+  34:           Nếu bạn có bất kỳ câu hỏi hoặc đề xuất nào liên quan đến chính sách bảo mật của chúng tôi, vui lòng liên hệ với chúng tôi qua địa chỉ email: privacy@numology.com.
+  35          </p>
+
+app\Page\Report\Calculate\index.js:
+  830            columns: [
+  831:             { text: "Numology", 
+  832              alignment: "left",
+
+app\Page\Report\Calculate\Report\BalanceNumber\index.js:
+  11    const showNameimgs = firstFullName.map((showNameimg) => {
+  12:     return <img src={`https://vi.numology.com/img/${showNameimg}1.png`} alt="" />;
+  13    });
+
+app\Page\Report\Calculate\Report\ExpressionNumber\index.js:
+  10    const showNameimgs = characterArray.map((showNameimg) => {
+  11:     return <img src={`https://vi.numology.com/img/${showNameimg}1.png`} alt="" />;
+  12    });
+
+app\Page\Report\Calculate\Report\HeartDesire\index.js:
+  14      return (
+  15:       <img src={`https://vi.numology.com/img/${showNameimg}${number}.png`} alt="" />
+  16      );
+
+app\Page\Report\Calculate\Report\KarmicLesson\index.js:
+  18      return (
+  19:       <img src={`https://vi.numology.com/img/${showNameimg}${1}.png`} alt="" />
+  20      );
+
+app\Page\Report\Calculate\Report\PersonalityNumber\index.js:
+  11          return (
+  12:           <img src={`https://vi.numology.com/img/${showNameimg}${number}.png`} alt="" />
+  13          );
+
+app\Page\SendForm\sendForm.css:
+   77      flex-direction: column;
+   78:     background-image: url('https://vi.numology.com/img/bggg.png');
+   79      background-repeat: no-repeat;
+
+  107  .containerRoute:before {
+  108:     background-image: url('https://vi.numology.com/img/mandala-lines-8.webp');
+  109      background-size: contain;
+
+  121  .containerRoute:after {
+  122:     background-image: url('https://vi.numology.com/img/mandala-shape-8.webp');
+  123      background-size: contain;
+
+  140      height: 400px;
+  141:     background-image: url('https://vi.numology.com/img/borderimg.png');
+  142      background-size: contain;
+
+  146  .border__bg:after {
+  147:     background-image: url('https://vi.numology.com/img/mandala-bg.webp');
+  148      background-size: contain;
+
+  158  .backgroungCanvas {
+  159:     background-image: url('https://vi.numology.com/img/sign-mandala-bg.png');
+  160      position: absolute;
+
+app\Page\SendForm\Bg-route\route.module.css:
+   2    position: relative;
+   3:   background-image: url("https://vi.numology.com/img/bgnum-sub.png");
+   4    min-height: 100vh;
+
+  17    left: 50%;
+  18:   background-image: url("https://vi.numology.com/img/cicle-homepage.webp");
+  19    width: 60vh;
+
+app\Page\SendForm\Bg-route\route.module.scss:
+   2      position: relative;
+   3:     background-image: url('https://vi.numology.com/img/bgnum-sub.png');
+   4      min-height: 100vh;
+
+  17          left: 50%;
+  18:         background-image: url('https://vi.numology.com/img/cicle-homepage.webp');
+  19          width: 60vh;
+
+app\Page\TermsOfUsePage\index.jsx:
+   7        <p>
+   8:         Chào mừng bạn đến với trang "Điều khoản sử dụng" của Numology.com! Trang web này được cung cấp cho mục đích cung cấp thông tin và giáo dục về thần số học. Bằng cách truy cập và sử dụng trang web này, bạn đồng ý tuân theo các điều khoản và điều kiện sau đây.
+   9        </p>
+
+  11        <p>
+  12:         Numology.com cung cấp thông tin và nội dung liên quan đến thần số học dưới dạng tư vấn và giáo dục. Chúng tôi không đảm bảo tính chính xác, đầy đủ hoặc thích hợp của thông tin trên trang web này cho bất kỳ mục đích cụ thể nào.
+  13        </p>
+
+  19        <p>
+  20:         Mọi nội dung trên trang web này, bao gồm văn bản, hình ảnh, biểu đồ và tài liệu khác, đều thuộc bản quyền của Numology.com hoặc các bên sở hữu tương ứng. Bất kỳ việc sao chép, phân phối hoặc sử dụng nội dung này cho mục đích thương mại hoặc cá nhân khác mà không có sự đồng ý từ chúng tôi là vi phạm bản quyền.
+  21        </p>

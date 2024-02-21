@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PrimaryButton from "../../../Components/Button";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "@remix-run/react";
 import axios from "axios";
 import FullName from "../../../Components/Calculate/CalculateChar";
 import NumerologyData from "../../../Components/Calculate/CalculateNumber";

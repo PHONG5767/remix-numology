@@ -14,7 +14,7 @@
     font-weight: bold;
 }
 .form{
-    background-image: url('https://numology.com/img/bag_img_4.webp');
+    background-image: url('https://numerologist.com/wp-content/uploads/2020/09/bag_img_4.jpg');
     background-size: cover;
     box-shadow: 0 0 36px #af3589;
     margin-top: -150px!important;
@@ -37,7 +37,7 @@
     width: 90%;
 }
 .containerWelcom {
-    background-image: url('https://numology.com/img/home_bg_4.webp');
+    background-image: url('../../../../public/img/home_bg_4.webp');
     padding-bottom: 300px;
     display: flex;
     justify-content: center;

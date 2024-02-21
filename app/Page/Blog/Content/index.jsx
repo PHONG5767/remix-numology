@@ -12,16 +12,16 @@ const contentHeader = {
     num22:'Thần số học số 22: Con số chủ đạo của thiên tài! Chi tiết nhất',
 }
 const img = {
-    num1:'https://numology.com/img/Life-path-1.png',
-    num2:'https://numology.com/img/Life-path-2.png',
-    num3:'https://numology.com/img/Life-path-3.png',
-    num4:'https://numology.com/img/Life-path-4.png',
-    num5:'https://numology.com/img/Life-path-5.png',
-    num6:'https://numology.com/img/Life-path-6.png',
-    num7:'https://numology.com/img/Life-path-7.png',
-    num8:'https://numology.com/img/Life-path-8.png',
-    num9:'https://numology.com/img/Life-path-9.png',
-    num11:'https://numology.com/img/Life-path-11.png',
-    num22:'https://numology.com/img/Life-path-22.png',
+    num1:'https://vi.numology.com/img/Life-path-1.png',
+    num2:'https://vi.numology.com/img/Life-path-2.png',
+    num3:'https://vi.numology.com/img/Life-path-3.png',
+    num4:'https://vi.numology.com/img/Life-path-4.png',
+    num5:'https://vi.numology.com/img/Life-path-5.png',
+    num6:'https://vi.numology.com/img/Life-path-6.png',
+    num7:'https://vi.numology.com/img/Life-path-7.png',
+    num8:'https://vi.numology.com/img/Life-path-8.png',
+    num9:'https://vi.numology.com/img/Life-path-9.png',
+    num11:'https://vi.numology.com/img/Life-path-11.png',
+    num22:'https://vi.numology.com/img/Life-path-22.png',
 }
 export{contentHeader,img}

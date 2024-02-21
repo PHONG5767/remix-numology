@@ -9,7 +9,7 @@ const BalanceNumberRp = () => {
   const BalanceNumberContentDemo = DemoContent.BalanceNumber
 
   const showNameimgs = firstFullName.map((showNameimg) => {
-    return <img src={`https://numology.com/img/${showNameimg}1.png`} alt="" />;
+    return <img src={`img/${showNameimg}1.png`} alt="" />;
   });
   return (
     <>

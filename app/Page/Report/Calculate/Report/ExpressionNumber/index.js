@@ -8,8 +8,8 @@ const ExpressionNumberRp = () => {
   const { sum, sumCompact } = RepresentCharacters(characterArray);
   const ExpressionNumbeContentDemo = DemoContent.ExpressionNumber
   const showNameimgs = characterArray.map((showNameimg) => {
-    return <img src={`https://numology.com/img/${showNameimg}1.png`} alt="" />;
-  });
+    return <img src={`img/${showNameimg}1.png`} alt="" />;
+ });
   return (
     <>
     <div>{ExpressionNumbeContentDemo}</div>

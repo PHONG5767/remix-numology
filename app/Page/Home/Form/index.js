@@ -6,8 +6,7 @@ import PrimaryButton from "../../../Components/Button";
 import "bootstrap/dist/css/bootstrap.css";
 import "./form.css";
 import { MyContext } from "../../../Route";
-import { useNavigate } from "react-router-dom";
-
+import { useNavigate } from "@remix-run/react";
 const Form = () => {
   const [value, setValue] = useState("");
   const { setDate, setName } = useContext(MyContext);

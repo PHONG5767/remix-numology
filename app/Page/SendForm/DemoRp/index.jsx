@@ -3,7 +3,7 @@ import ExpressionNumberRp from "../../Report/Calculate/Report/ExpressionNumber";
 import NummainRp from "../../Report/Calculate/Report/Nummain";
 import NumerologyData from "../../../Components/Calculate/CalculateNumber";
 import "bootstrap/dist/css/bootstrap.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "@remix-run/react";
 import PrimaryButton from "../../../Components/Button";
 
 
@@ -27,7 +27,7 @@ const DemoRp = () => {
                     <NummainRp />
                     <div className="d-flex justify-content-center">
                     <PrimaryButton  btn primary small onClick={getPass}>
-                        Xem Phân Tích Chi Tiết 40 Trang PDF Tại Đây
+                        Xem Phân Tích Chi Tiết Hơn 50 Trang PDF Tại Đây
                     </PrimaryButton>
                     </div>
 
@@ -82,7 +82,7 @@ const DemoRp = () => {
 
                      <div className="d-flex justify-content-center">
                     <PrimaryButton  btn primary small onClick={getPass}>
-                        Xem Phân Tích Chi Tiết 40 Trang PDF Tại Đây
+                        Xem Phân Tích Chi Tiết Hơn 50 Trang PDF Tại Đây
                     </PrimaryButton>
                     </div>
 
@@ -91,7 +91,7 @@ const DemoRp = () => {
                     <HeartDesireRp />
                      <div className="d-flex justify-content-center">
                     <PrimaryButton  btn primary small onClick={getPass}>
-                        Xem Phân Tích Chi Tiết 40 Trang PDF Tại Đây
+                        Xem Phân Tích Chi Tiết Hơn 50 Trang PDF Tại Đây
                     </PrimaryButton>
                     </div>
 
@@ -100,7 +100,7 @@ const DemoRp = () => {
                     <ExpressionNumberRp />
                     <div className="d-flex justify-content-center">
                     <PrimaryButton  btn primary small onClick={getPass}>
-                        Xem Phân Tích Chi Tiết 40 Trang PDF Tại Đây
+                        Xem Phân Tích Chi Tiết Hơn 50 Trang PDF Tại Đây
                     </PrimaryButton>
                     </div>
 
@@ -115,7 +115,7 @@ const DemoRp = () => {
                     </p>
                     <div className="d-flex justify-content-center">
                     <PrimaryButton  btn primary small onClick={getPass}>
-                        Xem Phân Tích Chi Tiết 40 Trang PDF Tại Đây
+                        Xem Phân Tích Chi Tiết Hơn 50 Trang PDF Tại Đây
                     </PrimaryButton>
                     </div>
 
@@ -130,7 +130,7 @@ const DemoRp = () => {
                     </p>
                     <div className="d-flex justify-content-center">
                     <PrimaryButton  btn primary small onClick={getPass}>
-                        Xem Phân Tích Chi Tiết 40 Trang PDF Tại Đây
+                        Xem Phân Tích Chi Tiết Hơn 50 Trang PDF Tại Đây
                     </PrimaryButton>
                     </div>
 
@@ -145,7 +145,7 @@ const DemoRp = () => {
                     </p>
                     <div className="d-flex justify-content-center">
                     <PrimaryButton  btn primary small onClick={getPass}>
-                        Xem Phân Tích Chi Tiết 40 Trang PDF Tại Đây
+                        Xem Phân Tích Chi Tiết Hơn 50 Trang PDF Tại Đây
                     </PrimaryButton>
                     </div>
 
@@ -160,7 +160,7 @@ const DemoRp = () => {
                     </p>
                     <div className="d-flex justify-content-center">
                     <PrimaryButton  btn primary small onClick={getPass}>
-                        Xem Phân Tích Chi Tiết 40 Trang PDF Tại Đây
+                        Xem Phân Tích Chi Tiết Hơn 50 Trang PDF Tại Đây
                     </PrimaryButton>
                     </div>
 
@@ -175,7 +175,7 @@ const DemoRp = () => {
                     </p>
                     <div className="d-flex justify-content-center">
                     <PrimaryButton  btn primary small onClick={getPass}>
-                        Xem Phân Tích Chi Tiết 40 Trang PDF Tại Đây
+                        Xem Phân Tích Chi Tiết Hơn 50 Trang PDF Tại Đây
                     </PrimaryButton>
                     </div>
 
@@ -190,7 +190,7 @@ const DemoRp = () => {
                     </p>
                     <div className="d-flex justify-content-center">
                     <PrimaryButton  btn primary small onClick={getPass}>
-                        Xem Phân Tích Chi Tiết 40 Trang PDF Tại Đây
+                        Xem Phân Tích Chi Tiết Hơn 50 Trang PDF Tại Đây
                     </PrimaryButton>
                     </div>
 
@@ -207,7 +207,7 @@ const DemoRp = () => {
                     </p>
                     <div className="d-flex justify-content-center">
                     <PrimaryButton  btn primary small onClick={getPass}>
-                        Xem Phân Tích Chi Tiết 40 Trang PDF Tại Đây
+                        Xem Phân Tích Chi Tiết Hơn 50 Trang PDF Tại Đây
                     </PrimaryButton>
                     </div>
 

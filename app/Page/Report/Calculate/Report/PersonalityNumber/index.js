@@ -9,7 +9,7 @@ const PersonalityNumberRp = () =>{
     const showNameimgs = characterArray.map((showNameimg) => {
         const number = consonantName.includes(showNameimg) ? 1 : 0;
         return (
-          <img src={`https://numology.com/img/${showNameimg}${number}.png`} alt="" />
+          <img src={`img/${showNameimg}${number}.png`} alt="" />
         );
       });
     return (

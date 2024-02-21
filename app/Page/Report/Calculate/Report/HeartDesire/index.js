@@ -12,7 +12,7 @@ const HeartDesireRp = () => {
   const showNameimgs = characterArray.map((showNameimg) => {
     const number = vowelName.includes(showNameimg) ? 2 : 0;
     return (
-      <img src={`https://numology.com/img/${showNameimg}${number}.png`} alt="" />
+      <img src={`img/${showNameimg}${number}.png`} alt="" />
     );
   });
   return (

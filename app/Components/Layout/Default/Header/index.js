@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "@remix-run/react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./header.css";
 
@@ -15,7 +15,7 @@ const Header = () => {
     <nav className=" position-relative navbar navbar-expand-lg navbar-light bg-light d-flex align-items-center">
       <Link className="navbar-brand ps-3" to="/">
         <img
-          src="https://numology.com/img/logo4.png"
+          src="img/logo4.png"
           alt=""
           className="img-fluid logo-small logo"
         />
