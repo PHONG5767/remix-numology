@@ -26,9 +26,7 @@ const Footer = () => {
               con số. Thần Số Học Online tạo ra công cụ tính toán, tra cứu Thần
               Số Học để giúp bạn hiểu và làm chủ các con số của cuộc đời bạn!"
             </blockquote>
-            <div class="e-btn" id="e-btn">
-              <PrimaryButton primary>Nhấn vào đây để lấy mã</PrimaryButton>
-            </div>
+            <div className="e-btn text-center" id="e-btn"></div>
           </div>
           <div className="col-sm-12 col-md-4 col-lg-4 text-white">
             <h4>CHÍNH SÁCH</h4>

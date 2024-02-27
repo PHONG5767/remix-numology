@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import pdfMake from "pdfmake";
-import NumerologyData from "../../../Components/Calculate/CalculateNumber";
+import NumerologyData from "~/Components/Calculate/CalculateNumber";
 import { DemoContent } from "../../../Components/Content/Report";
 import { NummainContent } from "../../../Components/Content/Report";
 import { BirthDayNumberContent } from "../../../Components/Content/Report";
-import RepresentCharacters from "../../../Components/Calculate/CalculateChar/Hooks";
-import FullName from "../../../Components/Calculate/CalculateChar";
+import RepresentCharacters from "~/Components/Calculate/CalculateChar/Hooks";
+import FullName from "~/Components/Calculate/CalculateChar";
 import { BalanceNumberContent } from "../../../Components/Content/Report";
 import { ExpressionNumberDescription } from "../../../Components/Content/Report";
 import { HeartDesireContent } from "../../../Components/Content/Report";
@@ -816,7 +816,7 @@ const ReportCal = () => {
         return {
           image: imageBase64,
           width: 595.28,
-          border:50,
+          border: 50,
         };
       }
       return null;
@@ -828,10 +828,7 @@ const ReportCal = () => {
       if (currentPage >= 3) {
         return {
           columns: [
-            { text: "Numology", 
-            alignment: "left",
-            color: "#686666",
-          },
+            { text: "Numology", alignment: "left", color: "#686666" },
             // { image: imgfooter,width: 150,height:40,
             //   alignment: "top",
             // },
@@ -891,7 +888,6 @@ const ReportCal = () => {
     };
 
     const pdfDocGenerator = pdfMake.createPdf(dd);
-
     pdfDocGenerator.getBlob((blob) => {
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
