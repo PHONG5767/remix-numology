@@ -4,9 +4,7 @@ function FAQs() {
     return (
         <div className='d-flex justify-content-center align-items-center m-3'>
             <div className='col-md-8 col-sm-12'>
-                <title className='text-center'>Ứng Dụng Thần Số Học</title>
-                <p className='text-center text-danger'>Với hơn 1200 phép tính toán phức tạp Vi.Numology.com cung cấp cho bạn báo cáo chi tiết và toàn diện nhất về cuộc đời
-                </p>
+                <h2 className='text-center'>Ứng Dụng Thần Số Học</h2>
                 <Accordion>
                     <Accordion.Item eventKey="0">
                         <Accordion.Header><b>Những người trùng tên và trùng chỉ số với nhau thì sao?</b></Accordion.Header>

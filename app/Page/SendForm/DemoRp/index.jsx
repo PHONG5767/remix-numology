@@ -6,7 +6,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import { useNavigate } from "@remix-run/react";
 import PrimaryButton from "../../../Components/Button";
 
-
 import "../sendForm.css";
 
 const DemoRp = () => {

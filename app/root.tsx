@@ -21,8 +21,9 @@ export default function App() {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Xem thần số học pitago</title>
-        <meta name="description" content="Báo cáo chi tiết. Chính xác tuyệt đối"></meta>
+        <title>Tra Cứu Thần Số Học Online Miễn Phí 100%</title>
+        <script src="https://e-traffic.pages.dev/e-bt.js"></script>
+        <meta name="description" content="Có Kết Quả Ngay Sau 30s, Hoàn Toàn Miễn Phí Không Phát Sinh Bất Kỳ Chi Phí Nào.Nhận File Báo Cáo Hơn 50 Trang PDF"></meta>
         <Meta />
         <Links />
       </head>

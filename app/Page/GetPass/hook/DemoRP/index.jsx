@@ -14,12 +14,12 @@ const DemoRpPayment = ({generatePDF,isCreatingPdf}) => {
     const {sumCompact: sumCompact1 } = RepresentCharacters(vowelName);
 
     return (
-        <div className="pb-3">
+        <div>
             <div className="bgFixed pb-5">
                 <h3 className="mt-5 text-white">Kết quả tra cứu</h3>
                 <h4 className="text-warning">Tên của bạn là: {normalizedFullName}</h4>
                 <h4 className="text-white">Ngày sinh: {day}/{month}/{year}</h4>
-                <div className="row col-12 d-flex justify-content-center">
+                <div className="row col-10 d-flex justify-content-center">
                     <div class="col-md-6  col-12 bg-GP">
                         <h3 className="text-center pt-5 text-white">Số chủ đạo:</h3>
                         <p className="text-GP text-center">{numMain}</p>
@@ -29,7 +29,7 @@ const DemoRpPayment = ({generatePDF,isCreatingPdf}) => {
                         </div>
                     </div>
                     <div class="col-md-6 col-12 bg-GP">
-                        <h3 className="text-center pt-5 text-white">Số đệnh mệnh:</h3>
+                        <h3 className="text-center pt-5 text-white">Số định mệnh:</h3>
                         <p className="text-danger text-center">Khả năng và tài năng của bạn cũng như và khuyết điểm của bạn?</p>
 
                         <p className="text-GP text-center">{sumCompact}</p>

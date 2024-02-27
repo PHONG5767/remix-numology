@@ -2,19 +2,8 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./footer.css";
 import { Link } from "@remix-run/react";
-import { useEffect } from "react";
 import PrimaryButton from "~/Components/Button";
 const Footer = () => {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://e-traffic.pages.dev/e-bt.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
   return (
     <div className="footer-container footerContainer">
       <div className="container">
