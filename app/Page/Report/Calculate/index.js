@@ -1,29 +1,34 @@
-import { useEffect } from "react";
-import pdfMake from "pdfmake";
+import { useEffect,useState } from "react";
+import pdfMake from "pdfmake/build/pdfmake.js";
+import pdfFonts from "pdfmake/build/vfs_fonts.js";
 import NumerologyData from "~/Components/Calculate/CalculateNumber";
-import { DemoContent } from "../../../Components/Content/Report";
-import { NummainContent } from "../../../Components/Content/Report";
-import { BirthDayNumberContent } from "../../../Components/Content/Report";
+import { DemoContent } from "../../../Components/Content/ReportPDF";
+import { NummainContent } from "../../../Components/Content/ReportPDF";
+import { BirthDayNumberContent } from "../../../Components/Content/ReportPDF";
 import RepresentCharacters from "~/Components/Calculate/CalculateChar/Hooks";
 import FullName from "~/Components/Calculate/CalculateChar";
-import { BalanceNumberContent } from "../../../Components/Content/Report";
-import { ExpressionNumberDescription } from "../../../Components/Content/Report";
-import { HeartDesireContent } from "../../../Components/Content/Report";
-import { KarmicLessonsContent } from "../../../Components/Content/Report";
-import { PersonalityNumberContent } from "../../../Components/Content/Report";
-import YourSelfNumberContent from "../../../Components/Content/Report/SubconsciousSelfNumber";
+import { BalanceNumberContent } from "../../../Components/Content/ReportPDF";
+import { ExpressionNumberDescription } from "../../../Components/Content/ReportPDF";
+import { HeartDesireContent } from "../../../Components/Content/ReportPDF";
+import { KarmicLessonsContent } from "../../../Components/Content/ReportPDF";
+import { PersonalityNumberContent } from "../../../Components/Content/ReportPDF";
+import YourSelfNumberContent from "../../../Components/Content/ReportPDF/SubconsciousSelfNumber";
+import PrimaryButton from "~/Components/Button";
+import DemoRpPayment from "~/Page/GetPass/hook/DemoRP";
 import {
   FirstChallenge,
   ThirdChallenge,
   SecondChallenge,
   FourthChallenge,
-} from "../../../Components/Content/Report";
+} from "../../../Components/Content/ReportPDF";
 
 import {
   FirstPeriodCycleContent,
   SecondPeriodCycleContent,
   ThirdPeriodCycleContent,
-} from "../../../Components/Content/Report";
+} from "../../../Components/Content/ReportPDF";
+
+pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
 const ReportCal = () => {
   const { numMain, day, month, year, numDay, numMonth, numYear } =
@@ -53,9 +58,10 @@ const ReportCal = () => {
 
   const countYes = 9 - KarmicLessonNumbers().length;
 
-  useEffect(() => {
-    generatePDF();
-  }, []);
+  // useEffect(() => {
+  //   generatePDF();
+  // }, []);
+  const [isCreatingPdf, setIsCreatingPdf] = useState(false);
 
   const generatePDF = async () => {
     const standardPageSizes = {
@@ -314,7 +320,7 @@ const ReportCal = () => {
 
         {
           image: await toDataURL("img/Chaldean-Numerology-Calculator.png"),
-          width: 500,
+          width: 300,
         },
         {
           text: " ",
@@ -388,7 +394,7 @@ const ReportCal = () => {
           image: await toDataURL(
             "img/The-Spiritual-Significance-of-Life-Path-Number-5.png"
           ),
-          width: 500,
+          width: 300,
         },
         {
           text: ` `,
@@ -414,7 +420,7 @@ const ReportCal = () => {
         },
         {
           image: await toDataURL("img/chukyduongdoi.png"),
-          width: 500,
+          width: 300,
         },
 
         {
@@ -463,7 +469,7 @@ const ReportCal = () => {
         },
         {
           image: await toDataURL("img/socanhan.png"),
-          width: 500,
+          width: 300,
         },
 
         {
@@ -490,7 +496,7 @@ const ReportCal = () => {
         },
         {
           image: await toDataURL("img/thachthuctrongcuocsong.png"),
-          width: 500,
+          width: 300,
         },
 
         {
@@ -541,7 +547,7 @@ const ReportCal = () => {
         },
         {
           image: await toDataURL("img/canbang.png"),
-          width: 500,
+          width: 300,
         },
 
         {
@@ -577,7 +583,7 @@ const ReportCal = () => {
         },
         {
           image: await toDataURL("img/sumenh.png"),
-          width: 500,
+          width: 300,
         },
 
         {
@@ -614,7 +620,7 @@ const ReportCal = () => {
         },
         {
           image: await toDataURL("img/linhhon.png"),
-          width: 500,
+          width: 300,
         },
 
         {
@@ -653,7 +659,7 @@ const ReportCal = () => {
         },
         {
           image: await toDataURL("img/nghiepchuong.png"),
-          width: 500,
+          width: 300,
         },
 
         {
@@ -695,7 +701,7 @@ const ReportCal = () => {
         },
         {
           image: await toDataURL("img/tinhcach.png"),
-          width: 500,
+          width: 300,
         },
 
         {
@@ -732,7 +738,7 @@ const ReportCal = () => {
         },
         {
           image: await toDataURL("img/tiemthuc.png"),
-          width: 500,
+          width: 300,
         },
 
         {
@@ -886,8 +892,10 @@ const ReportCal = () => {
         },
       },
     };
+    setIsCreatingPdf(true);
 
     const pdfDocGenerator = pdfMake.createPdf(dd);
+
     pdfDocGenerator.getBlob((blob) => {
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
@@ -898,14 +906,16 @@ const ReportCal = () => {
       a.click();
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
+
+      setIsCreatingPdf(false);
     });
   };
 
   return (
     <div>
-      <div id="pdfContainer"></div>
+        {/* <PrimaryButton primary large onClick={generatePDF}>{isCreatingPdf?("PDF đang được tạo") : ("Tạo pff")}</PrimaryButton>  */}
+        <DemoRpPayment generatePDF={generatePDF} isCreatingPdf={isCreatingPdf}/>
     </div>
   );
 };
-
 export default ReportCal;

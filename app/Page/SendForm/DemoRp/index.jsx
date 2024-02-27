@@ -14,7 +14,7 @@ const DemoRp = () => {
     const navigate = useNavigate();
 
     const getPass = () => {
-        navigate("/getpass");
+        navigate("/report");
     }
 
     return (

@@ -24,7 +24,7 @@ const Form = () => {
     setDate(saveDate);
     setName(saveName);
     setValue("");
-    navigate("/send-form");
+    navigate("/report");
   };
 
   return (

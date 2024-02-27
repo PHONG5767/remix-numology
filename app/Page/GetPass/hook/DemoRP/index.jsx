@@ -7,21 +7,11 @@ import "../../getpass.css"
 
 import "bootstrap/dist/css/bootstrap.css";
 
-const DemoRpPayment = () => {
+const DemoRpPayment = ({generatePDF,isCreatingPdf}) => {
     const { numMain, day, month, year } = NumerologyData();
     const { normalizedFullName, characterArray, vowelName} = FullName();
     const { sumCompact } = RepresentCharacters(characterArray);
     const {sumCompact: sumCompact1 } = RepresentCharacters(vowelName);
-
-    const scrollToPayment = () => {
-        const paymentElement = document.getElementById('paymentform1');
-        if (paymentElement) {
-            window.scrollTo({
-                top: paymentElement.offsetTop,
-                behavior: 'smooth',
-            });
-        }
-    };
 
     return (
         <div className="pb-3">
@@ -30,12 +20,12 @@ const DemoRpPayment = () => {
                 <h4 className="text-warning">Tên của bạn là: {normalizedFullName}</h4>
                 <h4 className="text-white">Ngày sinh: {day}/{month}/{year}</h4>
                 <div className="row col-12 d-flex justify-content-center">
-                    <div class="col-md-6 col-12 bg-GP">
+                    <div class="col-md-6  col-12 bg-GP">
                         <h3 className="text-center pt-5 text-white">Số chủ đạo:</h3>
                         <p className="text-GP text-center">{numMain}</p>
                         <p className="text-danger text-center">Thách thức và thuận lợi chủ đạo trong cuộc sống của bạn là gì?</p>
                         <div className="button w-75">
-                            <PrimaryButton btn primary large onClick={scrollToPayment}>Xem Chi Tiết </PrimaryButton>
+                            <PrimaryButton btn primary large onClick={generatePDF}>Xem Chi Tiết</PrimaryButton>
                         </div>
                     </div>
                     <div class="col-md-6 col-12 bg-GP">
@@ -44,7 +34,7 @@ const DemoRpPayment = () => {
 
                         <p className="text-GP text-center">{sumCompact}</p>
                         <div className="button w-75">
-                            <PrimaryButton btn primary large onClick={scrollToPayment}>Xem Chi Tiết </PrimaryButton>
+                            <PrimaryButton btn primary large onClick={generatePDF}>Xem Chi Tiết</PrimaryButton>
                         </div>
                     </div>
                     <div class="col-md-6 col-12 bg-GP">
@@ -52,7 +42,7 @@ const DemoRpPayment = () => {
                         <p className="text-danger text-center">Số Linh Hồn nói về những điều mà bạn khao khát nhất là gì?</p>
                         <p className="text-GP text-center">{sumCompact1}</p>
                         <div className="button w-75">
-                            <PrimaryButton btn primary large onClick={scrollToPayment}>Xem Chi Tiết </PrimaryButton>
+                            <PrimaryButton btn primary large onClick={generatePDF}>Xem Chi Tiết</PrimaryButton>
                         </div>
                     </div>
                     <div class="col-md-6 col-12 bg-GP">
@@ -60,7 +50,7 @@ const DemoRpPayment = () => {
                         <p className="text-danger text-center">Vũ khí mạnh nhất mà bạn được vũ trụ ban tặng?</p>
                         <p className="text-GP text-center">{day}</p>
                         <div className="button w-75">
-                            <PrimaryButton btn primary large onClick={scrollToPayment}>Xem Chi Tiết </PrimaryButton>
+                            <PrimaryButton btn primary large onClick={generatePDF}>Xem Chi Tiết</PrimaryButton>
                         </div>
                     </div>
                     <div class="col-md-6 col-12 bg-GP">
@@ -69,7 +59,7 @@ const DemoRpPayment = () => {
 
                         <p className="text-GP text-center">?</p>
                         <div className="button w-75">
-                            <PrimaryButton btn primary large onClick={scrollToPayment}>Xem Chi Tiết </PrimaryButton>
+                            <PrimaryButton btn primary large onClick={generatePDF}>Xem Chi Tiết</PrimaryButton>
                         </div>
                     </div>
                     <div class="col-md-6 col-12 bg-GP">
@@ -79,7 +69,7 @@ const DemoRpPayment = () => {
 
                         <p className="text-GP text-center">?</p>
                         <div className="button w-75">
-                            <PrimaryButton btn primary large onClick={scrollToPayment}>Xem Chi Tiết </PrimaryButton>
+                            <PrimaryButton btn primary large onClick={generatePDF}>Xem Chi Tiết</PrimaryButton>
                         </div>
                     </div>
                 </div>

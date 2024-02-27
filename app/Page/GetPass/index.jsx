@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "./getpass.css";
 import ContactForm from "./hook";
-import DemoRpPayment from "./hook/DemoRP";
+// import DemoRpPayment from "./hook/DemoRP";
 
 const GetPass = () => {
   return (
@@ -27,7 +27,7 @@ const GetPass = () => {
       <h3 className="pt-3 text-center pb-3">
         Bản xem trước của file PDF hơn 50 trang về cuộc đời bạn
       </h3>
-      <DemoRpPayment />
+      {/* <DemoRpPayment /> */}
     </div>
   );
 };

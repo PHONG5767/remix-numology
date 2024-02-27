@@ -47,7 +47,7 @@ const DemoContent = {
         <p>Số Định Mệnh của bạn nói nhiều về khả năng và tài năng của bạn cũng như và khuyết điểm của bạn. Tất cả những điều này đã có mặt từ khi bạn ra đời và tên của bạn phản ánh chúng. Điều này KHÔNG phải là một sự cố rẽ ngang mà bạn có tên như hiện tại.</p>
         {/* <p>Số Định Mệnh tiết lộ về tài năng, khả năng và điểm yếu có mặt trong bạn khi bạn bước vào thể xác con người. Tên của bạn và các số tạo ra từ nó tiết lộ sự phát triển của bạn, cũng như những tài năng và vấn đề mà bạn sẽ làm việc trong cuộc sống này.</p> */}
         <p>Để tìm Số Định Mệnh của bạn, hãy tham khảo bảng sau:</p>
-        <img src="img/word-chart.png" alt="" />
+        <img src="https://numology.com/img/word-chart.png" alt="" />
     </div>,
     HeartDesire: <div>
         <h3>Số linh hồn</h3>
