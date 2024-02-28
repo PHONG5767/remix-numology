@@ -64,6 +64,7 @@ const ReportCal = () => {
   const [isCreatingPdf, setIsCreatingPdf] = useState(false);
 
   const generatePDF = async () => {
+    setIsCreatingPdf(true);
     const standardPageSizes = {
       "4A0": [4767.87, 6740.79],
       "2A0": [3370.39, 4767.87],
@@ -892,8 +893,6 @@ const ReportCal = () => {
         },
       },
     };
-    setIsCreatingPdf(true);
-
     const pdfDocGenerator = pdfMake.createPdf(dd);
 
     pdfDocGenerator.getBlob((blob) => {

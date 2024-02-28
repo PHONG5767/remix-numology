@@ -7,11 +7,11 @@ import "../../getpass.css"
 
 import "bootstrap/dist/css/bootstrap.css";
 
-const DemoRpPayment = ({generatePDF,isCreatingPdf}) => {
+const DemoRpPayment = ({ generatePDF, isCreatingPdf }) => {
     const { numMain, day, month, year } = NumerologyData();
-    const { normalizedFullName, characterArray, vowelName} = FullName();
+    const { normalizedFullName, characterArray, vowelName } = FullName();
     const { sumCompact } = RepresentCharacters(characterArray);
-    const {sumCompact: sumCompact1 } = RepresentCharacters(vowelName);
+    const { sumCompact: sumCompact1 } = RepresentCharacters(vowelName);
 
     return (
         <div>
@@ -65,13 +65,23 @@ const DemoRpPayment = ({generatePDF,isCreatingPdf}) => {
                     <div class="col-md-6 col-12 bg-GP">
                         <h3 className="text-center pt-5 text-white">Số tiềm thức:</h3>
                         <p className="text-danger text-center">Những yếu tố tiềm ẩn trong tâm hồn và tiềm
-                        thức của bạn?</p>
+                            thức của bạn?</p>
 
                         <p className="text-GP text-center">?</p>
                         <div className="button w-75">
                             <PrimaryButton btn primary large onClick={generatePDF}>Xem Chi Tiết</PrimaryButton>
                         </div>
                     </div>
+                    {isCreatingPdf && (
+                        <div className="loading-overlay">
+                            <div className="d-flex flex-column shadow-lg p-3 mb-5 bg-white rounded justify-content-center align-items-center">
+                                <div className="spinner-border text-primary" role="status">
+                                    <span className="sr-only"></span>
+                                </div>
+                                <h3>File PDF đang được tạo. Vui lòng đợi...</h3>
+                            </div>
+                        </div>
+                    )}
                 </div>
 
             </div>
