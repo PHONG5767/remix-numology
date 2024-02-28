@@ -2,7 +2,6 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./footer.css";
 import { Link } from "@remix-run/react";
-import PrimaryButton from "~/Components/Button";
 const Footer = () => {
   return (
     <div className="footer-container footerContainer">
